@@ -16,7 +16,7 @@
 3. Programa que dado, un vector y un escalar, resuelve el producto. 
   Se distrubuyen los elementos del vector entre procesos disponibles.
   Muestra el vector original y el vector resultado. \
-  codigo del  programa: https://github.com/wfusiman/ars2020-tp8/blob/master/3/vectesc_mpi.c
+  codigo del  programa: [./3/vectesc_mpi.c](https://github.com/wfusiman/ars2020-tp8/blob/master/3/vectesc_mpi.c)
 
   Dirijirse en la carpeta ./3 \
   Compilar el programa ingresando 'make' desde la linea de comandos. \
