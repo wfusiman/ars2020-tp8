@@ -10,17 +10,17 @@ sudo apt-get install openmpi-bin openmpi-common openssh-client openssh-server li
 
 codigo de los programas: https://github.com/wfusiman/ars2020-tp8/2
 
-En la carpeta 2 ejecutar el comando make, para compilar y generar los binarios en la carpeta 2/dist.
+En la carpeta 2 ejecutar el comando make, para compilar y generar los binarios en la carpeta 2/dist. \
 Ejecutar make clean para eliminar eliminar los binarios.
 
-3 Programa que dado, un vector y un escalar, resuelve el producto. 
+3. Programa que dado, un vector y un escalar, resuelve el producto. 
 Se distrubuyen los elementos del vector entre procesos disponibles.
 Muestra el vector original y el vector resultado.
 
 codigo del  programa: https://github.com/wfusiman/ars2020-tp8/3/vectesc_mpi.c
 
 
-Hubicarse en la carpeta ./3
-Compilar el programa ingresando 'make' desde la linea de comandos.
-Ejecutar el programa ingresando 'make run' desde la linea de comandos (por defecto 4 procesos, puede especificar el numero de procesos ingresando el parametro p. Ej. make run p=8 ).
+Dirijirse en la carpeta ./3 \
+Compilar el programa ingresando 'make' desde la linea de comandos. \
+Ejecutar el programa ingresando 'make run' desde la linea de comandos (por defecto 4 procesos, puede especificar el numero de procesos ingresando el parametro p. Ej. 'make run p=8'). \
 Para eliminar los binarios ingresar 'make clean' desde la linea de comandos.
