@@ -13,20 +13,33 @@ default: all
 
 .PHONY: clean
 clean:	
+		@echo '-------------------------------- '
+		@echo 'Eliminando directorio $(DIST)'
 		rm -fr $(DIST)
+		@echo '-------------------------------- '
 
-all: program1 program2 program3
+all: mkd program1 program2 program3 
+
+mkd: 
+	@echo '-------------------------------- '
+	@echo 'Creando directorio $(DIST)'
+	@mkdir -p $(DIST)
+	@echo '-------------------------------- '
+
 
 program1:
-		mkdir -p $(DIST)
+		@echo 'Compilando $(SRC1)'
 		$(CC) $(SRC1) $(CFLAGS) $(DIST)/$(EX1)
+		@echo '-------------------------------- '
 
 program2:
-		mkdir -p $(DIST)
+		@echo 'Compilando $(SRC2) '
 		$(CC) $(SRC2) $(CFLAGS) $(DIST)/$(EX2)
+		@echo '-------------------------------- '
 
 program3:
-		mkdir -p $(DIST)
+		@echo 'Compilando $(SRC3) '
 		$(CC) $(SRC3) $(CFLAGS) $(DIST)/$(EX3)
+		@echo '-------------------------------- '
 		
 		
