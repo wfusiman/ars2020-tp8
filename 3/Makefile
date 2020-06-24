@@ -1,14 +1,17 @@
 CC=mpicc
+RUN=mpirun
 CFLAGS=-o 
+RFLAGS=-np
 LIBS=-lm
 SRC1=matvec_mpi.c
 SRC2=vectesc_mpi.c
 DIST=dist
 EX1=matvec
 EX2=vectesc
+p=4
 
 .PHONY: default
-default: all
+default: compile
 
 .PHONY: clean
 clean:	
@@ -17,13 +20,23 @@ clean:
 		rm -fr $(DIST)
 		@echo '------------------------------------------'
 
-all: mkd program1 program2 
+
+compile: mkd program2
+
+compileall: mkd program1 program2 
+
+run: compile
+	@echo '------------------------------------'
+	@echo Ejecutando $(EX2) con $(p) procesos
+	$(RUN) $(RFLAGS) $(p) $(DIST)/$(EX2) 
+
 
 mkd:
 	@echo '------------------------------------'
 	@echo 'Creando directorio $(DIST)'
 	mkdir -p $(DIST)
 	@echo '------------------------------------'
+
 
 program1:
 		@echo '------------------------------------'
