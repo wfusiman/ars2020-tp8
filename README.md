@@ -13,10 +13,14 @@ codigo de los programas: https://github.com/wfusiman/ars2020-tp8/2
 En la carpeta 2 ejecutar el comando make, para compilar y generar los binarios en la carpeta 2/dist.
 Ejecutar make clean para eliminar eliminar los binarios.
 
-3 Programa que dado, un vector y un escalar, resuelve el producto. Se distrubuyen los elementos del vector entre procesos disponibles.
+3 Programa que dado, un vector y un escalar, resuelve el producto. 
+Se distrubuyen los elementos del vector entre procesos disponibles.
 Muestra el vector original y el vector resultado.
 
-codigo del  programa: https://github.com/wfusiman/ars2020-tp8/3
+codigo del  programa: https://github.com/wfusiman/ars2020-tp8/3/vectesc_mpi.c
 
-En la carpeta 3 ejecutar el comando make, para compilar y generar los binarios en la carpeta 3/dist.
-Ejecutar make clean si se quiere eliminar los binarios.
+
+Hubicarse en la carpeta ./3
+Compilar el programa ingresando 'make' desde la linea de comandos.
+Ejecutar el programa ingresando 'make run' desde la linea de comandos (por defecto 4 procesos, puede especificar el numero de procesos ingresando el parametro p. Ej. make run p=8 ).
+Para eliminar los binarios ingresar 'make clean' desde la linea de comandos.
